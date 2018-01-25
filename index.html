@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Десинфекция</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/main.min.css">
+<!-- 	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<!-- <meta name="theme-color" content="#000"> -->
+	<!-- Windows Phone -->
+	<!-- <meta name="msapplication-navbutton-color" content="#000"> -->
+	<!-- iOS Safari -->
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="#000"> -->
+
+
+</head>
+
+<body>
+
+	<main class="main-wrap">
+		<div class="content-without-footer">
+			<header class="header fixedHeader">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="header_logo"> 
+								<a href="index.html" class="logo"> 
+									Логотип
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-9">
+							<div class="header__content">
+								<div class="header__content_top">
+									<nav class="nav">
+										<ul class="nav__list">                                         
+											<li class="nav__item"><a href="#" class="nav__link">О КОМПАНИИ </a></li>
+											<li class="nav__item"><a href="#" class="nav__link">ЦЕНЫ</a></li>
+											<li class="nav__item"><a href="#" class="nav__link">УСЛУГИ</a></li>
+											<li class="nav__item"><a href="#" class="nav__link">ЮР.ЛИЦАМ</a></li>
+											<li class="nav__item"><a href="#" class="nav__link">МАГАЗИН</a></li>
+											<li class="nav__item"><a href="#" class="nav__link">ОТЗЫВЫ</a></li>
+											<li class="nav__item"><a href="#" class="nav__link">КОНТАКТЫ</a></li>
+											<li class="nav__item"><a href="#" class="nav__link">УБОРКА</a></li>
+											<li class="nav__item"><a href="#" class="nav__link">КВАРТИРЫ</a></li>
+										</ul>
+									</nav>
+								</div>
+								<div class="header__content_bottom"> 
+									<div class="header__contacts">
+										<div class="header__contacts_list">
+											<ul>
+												<li><a href="#">8 (499)<span>123-45-67,</span></a></li>
+												<li><a href="#">8 (499)<span>123-45-67</span></a></li>
+											</ul>
+										</div>
+										<div class="header__contacts_btn">
+											<a href="#" class="btn btn-callback"><i class="fa fa-phone" aria-hidden="true"></i><span>Заказать обратный звонок</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<section class="top-screen">
+					<div class="container"> 
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="main-nav-wrap">
+									<div class="main-nav-wrap_inner">
+										<div class="main-nav-wrap_item">
+											<div class="main-nav-title"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="35" viewBox="0 0 32 35">
+												<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="32" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAjCAMAAADCMPhoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABvFBMVEUAAADOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXzkAAAA8V5ZhAAAAknRSTlMAS7tvk9teqM4UzYPIDAsbF2FqblsW4kwVQk37EQJnHnGHuBiXR40DpsDTPm1jPxkBv8nXnA4w1YCWwfZ6Ghzc0jk62Dv5QXsQ3+CMCatdIGhiWGsfdneQWpLafT00f61FK5ko8zLGM4ZPCNmuD+YGHdHKZi2yrDVSgXkH+jYuxMvPX1ZUt7wj3f7ejsM8Vw0qhKeQjpEAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAACLElEQVQ4y22TDVcSURCGRwXFQCQLBFFBDRcoCcUsRQISFU0liyD6wspES8vS0tLS8qMsK31/cbPLCnutOefOzJ33OXf3zJ1LVLKKyqpiUlVZQf8xnb76JK3W6/7Vawy15U3tmZrTutFUjHXmYjQZRb1eb1Hi2YZz55XEoq8XAKutUQ52OJqczXLWaLOW1RZerXCxd4MIrZy4FN+iAq42du3oILoATxM6iTrQzqU2lwpIXh97v/MiXQJbFwWcfi74vJKsXuYV7O7hD4d6r/QZr/qv9Zl7Q0TNPd1BRTb1y9hAeDAiXY/G4pHIjdCQRYoMhgfker+JEsPREc5GgaSOzx8bZ3ezDhjl4kh0OEE0MQnTVJJSt6ZRstt30pScMmFyQvnJgA+I3SVbGdBTJgb4AqVOpDOGbBc0di9nyKTFZkv3tUDs9F3FHzyEYI8ex7W6B/kGEZjOw1PWZ4AnT0Ug9wyYOdFT4dnnZBCBOSrMhlMqMI8FejEuAi8lWsC8CizCTkuvRGDMzMOxqAJ5WMlsEwH9a7IirwI5LFPwjQi8JVpGTgVWsEr0TgTeE61iRQXWsE70QQQ+Eq1jTQU2NnnKPonAZ6LOzY2TRmxtsxvS6l+4sL1V6qQbzH7VAjt8LtzlV4Fd9ppezvF2F5qXsbfP7lupFd/lUdjf09xm4UB+Avac0u8fP5PyYzkoaO/70KuEpV+/dxJ/lNR7KAzMERziBDlwJBaOs+I+e6wmfwG4Ffc0R94L6QAAAABJRU5ErkJggg=="/>
+											</svg>
+											<h3>ДЕЗИНСЕКЦИЯ</h3></div>		
+
+											<ul class="nav-ul"><li><a href="#">Уничтожение клопов</a></li>
+												<li><a href="#">Уничтожение тараканов</a></li>
+												<li><a href="#">Уничтожение блох</a></li>
+												<li><a href="#">Уничтожение муравьев</a></li>
+												<li><a href="#">Уничтожение ос</a></li>
+												<li><a href="#">Уничтожение клещей</a></li></ul>		
+											</div>
+											<div class="main-nav-wrap_item">
+												<div class="main-nav-title"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="37" viewBox="0 0 27 37">
+													<image id="Векторный_смарт-объект_копия" data-name="Векторный смарт-объект копия" width="27" height="37" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAlCAMAAACEemK6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB0VBMVEUAAADOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXzkAAABE0pjTAAAAmXRSTlMABpbvzTSe+iErtY4wBOHp9Z9cFcNyQQ2g/qfqNgE+6LZaFxSD15EKi3rA0xyyG0xsV385qviiuml0gWY1/ZPR1g5FHSmbhye79B58xMiQGbcFAy2560pw1efYroLw3h9VS4ri1N8CZTp5atqwlaSF/LR7ynF9JbP25V3sEvM3d2Lu0JmEUnhuVj9RyRpoGEMLKlt25ObC9xanDL0sAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAcBJREFUOMtt0+lfEkEYB/CnsECS0rTSgFTyCKVLUiMjgsxbvNDUArIiI0mSijIyI80jpcPS+v237sywSTv7vJjj+X5md2afHSIRhw4bio6QfhwFYDTpUjFYmHXtGDeU6JDl+AkjYCgt07GThvIK4NTp0jOyVVadtQJFZti0Yj9XjXzU1DpE7rx4V109CsLa0KgkLzgZNTZBE80Ocl28xOwypLhCV1v4I935xLVWtLWL4XXytIm33uDzjpte3CIfG972UwB3BHZ67nZ1Uw/Q20f9A4PBIWV/rcPCRkaJxkJsxfiEeqx7cPN+0Dg5pW5j+n7oAU+GI6wt0W4zyrIPMaO0j7TWxRc+fqI0Ma3FnjKbhYmeyWfnH9yPODlle84fOtdECdlecJu3UkS2BLfkS+qVbYFbChSWbZ5bC+iVbK+5BUFvJPKmub310tA7rVWKz704SfReQ5kPnBxKOdXiqrH0USxbRoB1n7IH9Dn/h9ozWQsfRFfGhdSnLPnirmJWrbPjy1rd+sbmqDr/iq3Cv3s74Po3ziH2rdC+K1W1+cn+4+eOD819/1+LX2yXv3eXlC5p196ZdHzvj3K+RO6vmO8DG6onPiswSd8AAAAASUVORK5CYII="/>
+												</svg>
+												<h3>ДЕРАТИЗАЦИЯ</h3></div>		
+												<ul class="nav-ul"><li><a href="#">Уничтожение грызунов</a></li>
+													<li><a href="#">Уничтожение крыс</a></li>
+													<li><a href="#">Уничтожение мышей</a></li></ul>		
+												</div>
+												<div class="main-nav-wrap_item">
+													<div class="main-nav-title"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="34" viewBox="0 0 32 34">
+														<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="32" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAiCAMAAAAJbCvNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABlVBMVEUAAADOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXznOXzkAAADgQjThAAAAhXRSTlMAB9BSTmA8V7oooLj6iYzgqNqsIBwC/ojY8aMne8QE91kB2+z0ZJgwTO/9Vj5JgBfJjoQUD+0S5p6WwQMVzpduJqUa0yIqtN0IEz9H8E/Wt3lQJaLlvXV6wLwYNOHMW5kkOZ++CsV0MflU9kvCBdSSzT1/aiOqBqnnDEM6Zi7ybNWdsPgOHP9DYwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAHMSURBVDjLhdKJU9NAFAbwr+UQ2kItrVRQioGAiHIpoEIFWiv3IYcich+KHIqoIIfcfP+3u9skk5B2eDOZ2X3vl+TlZYGs4fHmWOvcPBH5N8AdsqDQWHspwncD+EUuUAQUB+8iJEFJOHLPVo+UymQU8PF+fpDpKCt/YIGHMlERk4A+E5CVj4y6ViV21RFIoNcoUPu4LvqE9U/T4JnIlDZAgSAUaBSbpmbqYQVaROa5Wr0IR1rbVJOa2LW/5CuVfk12dBqvi79Jv79LfkQ3ddEYegJMJM36W7PDhLglRb4TyV729Rv1AauuRIwcBIbIXHPiFbSFmOYwRxAb5Zg5j/d0RJ0A46KRwIQJQk4wqcAUi6yJ1jvBBwXkZYZK6+Ufp/3q53zKCGY+y9XsXDYw79EWEouFWBrOApaxQq6uAdOZQRDL5Jc1Ldqfygz8+MrmVq2L6/gmQBs3sMktG9hGjVfWOfFdPuEHd3rIWRvQPfE4ismf2JXgl/yuqZi9yd/qAI7+wZ4E+3/Jg13Ygb6Ow6PjTvxTcxDn+WQfDsDTs0MguUMDOMM4zOchNemswIpbwYwLVDvBogtcOEGDCyQP7PUCzQUQvrwyy5sX167yf8nc87VPRfHjAAAAAElFTkSuQmCC"/>
+													</svg>
+													<h3>ДЕЗИНФЕКЦИЯ</h3></div>		
+													<ul class="nav-ul">
+														<li><a href="#">Дезинфекция помещений</a></li>
+														<li><a href="#">Дезинфекция в ресторанах</a></li>
+														<li><a href="#">Дезинфекция предприятий</a></li>
+													</ul>		
+												</div>	
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-9">
+										<div class="top-screen__content_wrap">
+											<div class="top-screen__content_top">
+												<div class="top-screen__content_top-left">
+													<div class="top-screen__content_top-left-img">
+														<img src="img/logo-ROSPOTREBNADZOR.png" class="img-fluid d-block" alt="">
+													</div>
+													<div class="top-screen__content_top-left-text">
+														Одобрено органами
+														<span>РОСПОТРЕБНАДЗОРА</span>
+													</div>
+												</div>
+												<div class="top-screen__content_top-right">
+													<ul>
+														<li><img src="img/first-channel.png" class="img-fluid d-block" alt=""></li>
+														<li><img src="img/russia-1.png" class="img-fluid d-block" alt=""></li>
+														<li><img src="img/federal-channel.png" class="img-fluid d-block" alt=""></li>
+														<li>Работаем с федеральными <br>
+														телеканалами</li>
+													</ul>
+												</div>
+											</div>
+											<div class="top-screen__content_middle">
+												<div class="top-screen__content_banner-home">
+													<div class="home-slider-wrap">
+														<div class="home-slider owl-carousel owl-theme">
+															<div class="item">
+																<div class="home-slider__title">
+																	<b>УНИЧТОЖЕНИЕ</b> <br> КЛОПОВ
+																</div>
+																<div class="home-slider__table_wrap">
+																	<table style="border:1px solid white;">
+																		<tbody>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>1-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>1800 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1600 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>2-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>2000 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1800 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>3-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>2300 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>2000 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>Комплексная обработка</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>1200 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1000 ₽</b></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<div class="home-slider__table_wrap-info_bottom">
+																		Заявки оставленные с 23.00 до 7.00, обрабатываются с 8.00 до 9.00
+																	</div>
+																</div>
+															</div>
+															<div class="item">
+																<div class="home-slider__title">
+																	<b>УНИЧТОЖЕНИЕ</b> <br> КЛОПОВ
+																</div>
+																<div class="home-slider__table_wrap">
+																	<table style="border:1px solid white;">
+																		<tbody>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>1-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>1800 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1600 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>2-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>2000 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1800 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>3-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>2300 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>2000 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>Комплексная обработка</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>1200 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1000 ₽</b></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<div class="home-slider__table_wrap-info_bottom">
+																		Заявки оставленные с 23.00 до 7.00, обрабатываются с 8.00 до 9.00
+																	</div>
+																</div>
+															</div>
+															<div class="item">
+																<div class="home-slider__title">
+																	<b>УНИЧТОЖЕНИЕ</b> <br> КЛОПОВ
+																</div>
+																<div class="home-slider__table_wrap">
+																	<table style="border:1px solid white;">
+																		<tbody>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>1-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>1800 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1600 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>2-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>2000 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1800 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>3-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>2300 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>2000 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>Комплексная обработка</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>1200 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1000 ₽</b></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<div class="home-slider__table_wrap-info_bottom">
+																		Заявки оставленные с 23.00 до 7.00, обрабатываются с 8.00 до 9.00
+																	</div>
+																</div>
+															</div>
+															<div class="item">
+																<div class="home-slider__title">
+																	<b>УНИЧТОЖЕНИЕ</b> <br> КЛОПОВ
+																</div>
+																<div class="home-slider__table_wrap">
+																	<table style="border:1px solid white;">
+																		<tbody>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>1-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>1800 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1600 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>2-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>2000 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1800 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>3-к. квартира</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>2300 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>2000 ₽</b></td>
+																			</tr>
+																			<tr>
+																				<td style="border: 1px solid #fff;padding-left: 15px; " class="text-left"><span>Комплексная обработка</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><span>1200 ₽</span></td>
+																				<td style="border: 1px solid #fff" class="text-center"><b>1000 ₽</b></td>
+																			</tr>
+																		</tbody>
+																	</table>
+																	<div class="home-slider__table_wrap-info_bottom">
+																		Заявки оставленные с 23.00 до 7.00, обрабатываются с 8.00 до 9.00
+																	</div>
+																</div>
+															</div>																														
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="top-screen__content_bottom">
+												<div class="top-screen__content_form_wrap">
+													<form id="form-home">
+														<div class="form-group__wrap d-flex">
+															<div class="form-group__left">
+																<div class="form-title">
+																	оставьте заявку и получите скидку на услугу <b>10%</b>
+																</div>
+																<div class="input-group">
+																	<input type="text" class="form-control name" placeholder="Ваше имя">
+																	<input type="tel" class="form-control tel" placeholder="Ваш телефон">
+																</div>
+															</div>
+															<div class="form-group__right"><button type="submit" class="btn btn-submit">ОТПРАВИТЬ</button></div>
+														</div>
+													</form></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="destr__moscow">
+								<div class="container">
+									<div class="section__title">
+										<h2 class="blue-color">УНИЧТОЖЕНИЕ КЛОПОВ В МОСКВЕ: </h2>
+										<span>ПРОФЕССИОНАЛЬНАЯ ДЕЗИНСЕКЦИЯ</span>
+									</div>
+									<div class="destr__moscow_text">
+										<p>Профессиональное уничтожение клопов в Москве от службы дезинсекции «Москлоп» — это возможность заказать обработку от насекомых действительно недорого. Наши цены на уничтожение клопов в квартире начинаются от 1600р, причем выезд по Москве уже включен в стоимость. </p>
+										<div class="destr__moscow_text-about">
+											<span>Служба по уничтожению клопов «Москлоп» работает с применением препаратов последнего поколения, поэтому:</span>
+											<ul>
+												<li>Обработка квартиры от клопов занимает не более 1 часа (в зависимости от площади помещения).</li>
+												<li>Гарантировано 100% выведение клопов из квартиры, включая их личинок и яйца.</li>
+											</ul>
+										</div>
+										<p>Обработка от клопов безопасными средствами подходит для детских комнат и помещений, где живут люди, склонные к аллергии, а также не наносит вреда домашним животным.
+											Клопы в квартире — это не только дискомфорт и плохой психологический климат. Клопы переносят такие заболевания, как гепатит В вирусной этиологии, туляремия, Q-лихорадка. 
+										У малыша из-за частых укусов может возникнуть железодефицитная анемия, а у склонного к аллергии человека чрезмерное количество укусов может привести к анафилактическому шоку. </p>
+										<div class="text__call_us">
+											Звоните нам, и мы избавим от клопов быстро и недорого!
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="why-we">
+								<div class="container">
+									<div class="section__title">
+										<h2 class="dark-color">ПОЧЕМУ ВЫБИРАЮТ НАС</h2>
+									</div>
+									<div class="row">
+										<div class="col-lg-3">
+											<div class="why-we__item">
+												<div class="why-we__item_icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="85" viewBox="0 0 62 85">
+													<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="62" height="85" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAABVCAMAAAAmLKfvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC2VBMVEUAAACbilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilwAAAB2XJGpAAAA8XRSTlMACrrrPwO18SgPbkMBftkQT61RmNZYAv2/OcbpB/NyR4n7zVO2Rp2G8AbeWRSp5jQFGS0mXODo/PLV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"/>
+												</svg>
+											</div>
+											<div class="why-we__item_title">
+												<h4>ГАРАНТИЯ ДО 5 ЛЕТ</h4>
+											</div><div class="why-we__item_descr">
+												<p>Официальная гарантия уничтожения насекомых и вредителей — от 1 до 5 лет 
+												(в зависимости от вида обработки). Бесплатное обслуживание весь гарантийный срок.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="why-we__item">
+											<div class="why-we__item_icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="77" viewBox="0 0 75 77">
+												<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="75" height="77" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABNCAMAAADZyWnFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAChVBMVEUAAACbilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilwAAADRBeDNAAAA1XRSTlMAJMP7lAwEbPPdPUHT/pANK7TlWF2riBEZm/y+LdwmEIX1oiDtNgl0+iF62HDnqh5/5PTQbhNnvRdjueNSCob5TVv97CMIQIDI94MLr08VLE5vmM2dsgZIXmmoAVDVQvakKgJWzns38aySIkSz7kfMDyXgKesxseh9GxzarsltGgOw3qHGP2W4BUso8g6ecX6aX4E12QfWO+EYH0MWoDjKFEq8LuriYvCKvzynUZkvdYTScjBMh+8S6XetxGTmPpxGqbq2pngna5Olu0U5wJH4jYKWt1U6/Oy9AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAABRpJREFUWMOtmPtDFFUUxy9gGxGLRMhjQRBEXNpFECFJ3huxIAgksKRboKQhCoL4yAh1TVPLHlpRYoAvSDItstTK7J29H1b3/2ln5s695955MIDnJ+b7PeczszOHe+4MQuYREho27x50N8J2bzjG+L6Iu4C6PxLLYY+aP0dS9AOYRsyDpqmxC+LiTeyERAeGkZRsnBsX9BemGLmpi9KwEPb0xSYojDOW6JqZSzOwTjjnZellP0Rslx7JnY0NwrFMe3I3vXCNlZO7nK/P4w9X5Bdw+Q9TZyUPKnxklZ0vLSouKXXyUtmC8kxaUeFR5UcrGeexKm+1AMI1q2uDTkqd+FvT6qKVojUU5VQaur6h8fG1TWHau9OcQ84TUS1YLT5Zb2WX/ETwcF2RA+uGfT3oGP+TT0EvXUG1tVOlVDouM3hiGzbyt7Lj6U2q59nsl6VnOmn6FlnRJYV3bdVplm3d8v3s2a4cJjNUbwkyYPWu6zPo8B1x2bh/h/L3zl20YHkC0mW5Vjcgk7C1kroQ1oZpu5GWFbPHHYKsRQ7o6GLEs57dsrf8OYucYAwsZKhcJLC81jnBqH+eoQb9c2IVRDJUJJgGs2D17WOoDLgMzZxVEgpaug3NheVLAk9+PzJnHfCZoQIHAaoZmbIK6vALJk3mPwRQh6Wz+mONWC9KPdifYMiKAqj+QknxHjRgHVHWtk1GszUXLgDylGvEBiyfurgfPaaLygcoz0uS8vJxI9YrNPNVPVQs/Od9TS5wYSMWYq3zuhbV6AGoE/KTaMHGrAa2gJ8UUW01AJUk3wQvNmGhN2i2cxuPerMToN6KV+67KWvobZrfGQ1RG3cBVI88VlI6zVnoHTYjTw0z1Gk4zR3vSlIHGU3GLNiN1UOqOALWPozdspaKp2WVuFhROtHqIyFqFFlloTEwfJfKSt8ZiNpHrvasBRbdUEnNfU660sMQlX2ApC22wuo4zyo7L6BMuGDhsjE0ExZKGGe1E1tbIAq/h2bGQttBMb/76mJJ0RrWRUVYxDf5JNaP920s5xLRPqAK+TmJPGtohS6qH+4vLxPxClWayAl5FvpQby+VdwGmfETUKaoMKsLxDgG2WYvylHMZzUSuoEocUcTN9rGPNayrfIa6t/uEKp8S5ZrAQkvEjfAV3h8m/vUAlW4Q6TPNVOziUeeFEfA50b8A2k2ifSmy5k9AlCuVdzPVl5MjQNxPtFua19dygMqoFMyrxLAPALFQbewokYXWs+b/SrDqrxNnDyerU91eJbJG6OuaZpB8rTpjnKz+X+FbI2LFSeJMisY3as1RwfhWNZI0z/I7Wf8+IMhni/QvK7gnpoPvkF+wsi7qPEIUWKUW1GnuMVtIp0Qr5YczUQWieEJND9upYdnYev4jmj7iaPZeHfd2OLV/mo4U+Jnm3rTpJVymvrJ/MQ7fMppJp4gQbB+Br/lNUMNsJ9Q+ZpDjT2Sw7huGqEvsE4FnjfFt+IXBJqr0c2xe9iLtqUDGEdjAYPaoWp2Mhl6W4SxGZuGHC9apRtGunQRv93nn0DSRDzeRv3KDoiMWbppidk+HCn4j6AEF9nT2zvBbEzBwtaU3zRxuR+MYPS2rv/8BVfynzwoqOH6m4O/Ef/19u6CtmyONl1sjyRfhwmYxWG8dFZz/d8oMSUWNMyFJEdKtT2q/UztTVDAiQrUk59qBWZCkaBU+LTlGK2dJkmkrGanmn6w5kKRIblY+So2XFs6RJEW8O9Lx738We/N/+Cn3TtQdnBgAAAAASUVORK5CYII="/>
+											</svg>
+										</div>
+										<div class="why-we__item_title">
+											<h4>БЕЗОПАСНО ДЛЯ ДЕТЕЙ 
+											И ЖИВОТНЫХ</h4>
+										</div>
+										<div class="why-we__item_descr">
+											<p>
+											Только безопасные средства, подходящие для детских комнат и не вредящие домашним животным. Возвращайтесь домой уже через 3 часа после обработки.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="why-we__item">
+										<div class="why-we__item_icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="75" viewBox="0 0 68 75">
+											<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="68" height="75" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABLCAMAAAD+m9FVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACuFBMVEUAAACbilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilwAAABLEDkTAAAA5nRSTlMADyoUXKLbIA5nvf0yKZv1QCSo/giH+TcVTFtgXkguBtQvDE+KwfIdV/YbDWK6AnD6KJzYadwrrrBW5bmW/Ig59/h+GXmGUOlGIerxMPBSCqHDjGEQBdVVZtCa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"/>
+										</svg>
+									</div>
+									<div class="why-we__item_title">
+										<h4>ОПЕРАТИВНОСТЬ – 
+										НАШ КОНЕК</h4>
+									</div><div class="why-we__item_descr">
+										<p>Звоните нам круглосуточно, без выходных. Приедем точно в согласованное время, подстроимся под Ваш график. Стандартная процедура длится всего несколько часов.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="why-we__item">
+									<div class="why-we__item_icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="79" viewBox="0 0 80 79">
+										<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="80" height="79" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABPCAMAAABLT7LRAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACr1BMVEUAAACbilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilybilwAAABsexIFAAAA43RSTlMAiod6eGo/QwFbXkBFvNYMTvz9Ugtn08Me/vGQJUL4+kgjj++2SQI38va1d9nb7M80KI2C3C8HrcDg8/XQssf0yKFwZXOEo8zJsNd+OAQGPH3VmTMwnKYcm4xrVqgNlF0+YPtG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"/>
+									</svg>
+								</div>
+								<div class="why-we__item_title">
+									<h4>ПРИЕМЛЕМЫЕ ЦЕНЫ И ГИБКАЯ СИСТЕМА СКИДОК</h4>
+								</div><div class="why-we__item_descr">
+									<p>У нас обоснованные расценки, соответствующие уровню применяемых препаратов и высоким стандартам проводимых работ. Предусмотрена гибкая система скидок.</p>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</section>
+			<section class="cost-of-insect">
+				<div class="container">
+					<div class="section__title"><h2 class="blue-color">СТОИМОСТЬ ОБРАБОТКИ ОТ НАСЕКОМЫХ</h2>
+					</div>
+					<div class="cost-of-insect__tabs_wrapper">
+						<div class="cost-of-insect__tabs_content_buttons">
+							<input id="tab1" type="radio" name="tabs" checked="">
+							<label for="tab1">КВАРТИРЫ</label>
+
+							<input id="tab2" type="radio" name="tabs">
+							<label for="tab2">КОТТЕДЖИ</label>
+
+							<input id="tab3" type="radio" name="tabs">
+							<label for="tab3">ОРГАНИЗАЦИИ</label>
+
+							<input id="tab4" type="radio" name="tabs">
+							<label for="tab4">VIP</label>
+
+							<input id="tab5" type="radio" name="tabs">
+							<label for="tab5">ВЫЕЗД ЗА МКАД</label>
+						</div>
+						<div class="cost-of-insect__tabs_content">
+							<table id="table1" class="active">
+								<thead>
+									<tr>
+										<th>ПОМЕЩЕНИЕ</th>
+										<th>Обработка ручным опрыскиванием квазар</th>
+										<th>Обработка холодным туманом</th>
+										<th>Обработка холодным туманом + барьерная защита</th>
+										<th>Обработка холодным туманом + 2 вида яда (импортные)</th>
+										<th>Обработка горячим туманом</th>
+										<th>Комплексная обр. холодным и горячим туманом + барьерная защита с 2 видами яда</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>ГАРАНТИЯ</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+									</tr>
+									<tr>
+										<td>1 КОМНАТНАЯ</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+
+									</tr>
+									<tr>
+										<td>2 КОМНАТНАЯ</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+									</tr>
+									<tr>
+										<td>3 КОМНАТНАЯ</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+									</tr>
+									<tr>
+										<td>4 КОМНАТНАЯ</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+									</tr>
+									<tr>
+										<td>МОП 
+										(кухня. ванная, коридор)</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+									</tr>
+								</tbody>
+							</table>
+												<table id="table2">
+								<thead>
+									<tr>
+										<th>ПОМЕЩЕНИЕ</th>
+										<th>Обработка ручным опрыскиванием квазар</th>
+										<th>Обработка холодным туманом</th>
+										<th>Обработка холодным туманом + барьерная защита</th>
+										<th>Обработка холодным туманом + 2 вида яда (импортные)</th>
+										<th>Обработка горячим туманом</th>
+										<th>Комплексная обр. холодным и горячим туманом + барьерная защита с 2 видами яда</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>ГАРАНТИЯ</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+									</tr>
+									<tr>
+										<td>1 КОМНАТНАЯ</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+
+									</tr>
+									<tr>
+										<td>2 КОМНАТНАЯ</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+									</tr>
+									<tr>
+										<td>3 КОМНАТНАЯ</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+									</tr>
+									<tr>
+										<td>4 КОМНАТНАЯ</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+									</tr>
+									<tr>
+										<td>МОП 
+										(кухня. ванная, коридор)</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+									</tr>
+								</tbody>
+							</table>
+												<table id="table3">
+								<thead>
+									<tr>
+										<th>ПОМЕЩЕНИЕ</th>
+										<th>Обработка ручным опрыскиванием квазар</th>
+										<th>Обработка холодным туманом</th>
+										<th>Обработка холодным туманом + барьерная защита</th>
+										<th>Обработка холодным туманом + 2 вида яда (импортные)</th>
+										<th>Обработка горячим туманом</th>
+										<th>Комплексная обр. холодным и горячим туманом + барьерная защита с 2 видами яда</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>ГАРАНТИЯ</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+									</tr>
+									<tr>
+										<td>1 КОМНАТНАЯ</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+
+									</tr>
+									<tr>
+										<td>2 КОМНАТНАЯ</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+									</tr>
+									<tr>
+										<td>3 КОМНАТНАЯ</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+									</tr>
+									<tr>
+										<td>4 КОМНАТНАЯ</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+									</tr>
+									<tr>
+										<td>МОП 
+										(кухня. ванная, коридор)</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+									</tr>
+								</tbody>
+							</table>
+												<table id="table4">
+								<thead>
+									<tr>
+										<th>ПОМЕЩЕНИЕ</th>
+										<th>Обработка ручным опрыскиванием квазар</th>
+										<th>Обработка холодным туманом</th>
+										<th>Обработка холодным туманом + барьерная защита</th>
+										<th>Обработка холодным туманом + 2 вида яда (импортные)</th>
+										<th>Обработка горячим туманом</th>
+										<th>Комплексная обр. холодным и горячим туманом + барьерная защита с 2 видами яда</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>ГАРАНТИЯ</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+									</tr>
+									<tr>
+										<td>1 КОМНАТНАЯ</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+
+									</tr>
+									<tr>
+										<td>2 КОМНАТНАЯ</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+									</tr>
+									<tr>
+										<td>3 КОМНАТНАЯ</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+									</tr>
+									<tr>
+										<td>4 КОМНАТНАЯ</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+									</tr>
+									<tr>
+										<td>МОП 
+										(кухня. ванная, коридор)</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+									</tr>
+								</tbody>
+							</table>
+												<table id="table5">
+								<thead>
+									<tr>
+										<th>ПОМЕЩЕНИЕ</th>
+										<th>Обработка ручным опрыскиванием квазар</th>
+										<th>Обработка холодным туманом</th>
+										<th>Обработка холодным туманом + барьерная защита</th>
+										<th>Обработка холодным туманом + 2 вида яда (импортные)</th>
+										<th>Обработка горячим туманом</th>
+										<th>Комплексная обр. холодным и горячим туманом + барьерная защита с 2 видами яда</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>ГАРАНТИЯ</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+										<td>1 год</td>
+									</tr>
+									<tr>
+										<td>1 КОМНАТНАЯ</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+										<td>1600 РУБ.</td>
+
+									</tr>
+									<tr>
+										<td>2 КОМНАТНАЯ</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+										<td>1800 РУБ.</td>
+									</tr>
+									<tr>
+										<td>3 КОМНАТНАЯ</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+										<td>2000 РУБ.</td>
+									</tr>
+									<tr>
+										<td>4 КОМНАТНАЯ</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+										<td>2400 РУБ.</td>
+									</tr>
+									<tr>
+										<td>МОП 
+										(кухня. ванная, коридор)</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+										<td>1000 РУБ.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>	
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+
+		</footer>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
