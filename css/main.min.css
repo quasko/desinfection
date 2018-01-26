@@ -86,4 +86,88 @@
 .footer_copyrights p{
     font-weight: 600;
 }
+.comment_title {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.comment_title p {
+	text-align: center;
+	font-size: 27px;
+	color: #547593;
+	letter-spacing: 0.225em;
+	font-weight: 600;
+}
+
+.comment {
+	background-color: #f1e0b4;
+	padding-left: 30px;
+	padding-top: 30px;
+	
+	
+}
+
+.comment-right {
+	margin-left: 60px;
+}
+
+.comment_author {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.comment p {
+	font-size: 15px;
+	line-height: 24px;
+	font-style: italic;
+}
+
+.comment_author p{
+	font-weight: bold;
+}
+
+.comment::before {
+	content: "";
+	position: absolute;
+	display: block;
+	
+	width: 66px;
+	height: 60px;
+	top: -30px;
+	left: -33px;
+	background-color: #3b4569;
+	background-image: url(../img/comment-icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.comment::after {
+	content: " ";
+	display: block;
+	
+	width: 25px;
+	height: 25px;
+	border-top: 25px solid #d9be79; 
+	border-left: 25px solid transparent;
+	position: absolute;
+	right: 0;
+	bottom: -25px;
+	
+}
+
+.comments_block .row {
+	margin-bottom: 50px;
+	padding-top: 30px;
+}
+
+.comment_slider .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+    
+    opacity: .5;
+    
+}
+
 547593
+f1e0b4
+3b4569
+d9be79
